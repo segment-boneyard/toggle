@@ -1,0 +1,87 @@
+
+/**
+ * Toggle.
+ *
+ *   div.toggle
+ *     label.toggle-on-label
+ *     input[type="checkbox"].toggle-checkbox
+ *     label.toggle-off-label
+ *
+ * The toggle's height is always relative to the font-size, so if you want to
+ * change the height you can easily without worrying about everything else.
+ */
+
+.toggle {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  height: 1em;
+  width: 2.5em; /* default, but changeable */
+  cursor: pointer;
+}
+
+.toggle-on-label,
+.toggle-checkbox,
+.toggle-off-label {
+  pointer-events: none;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 1em;
+  width: 1em;
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-transition: left .2s ease-in, margin .2s ease-in;
+          transition: left .2s ease-in, margin .2s ease-in;
+}
+
+.toggle-on-label,
+.toggle-off-label {
+  position: absolute;
+  height: 1em;
+  line-height: 1em;
+  text-align: center;
+  -webkit-transition: -webkit-transform .2s ease-in;
+          transition:         transform .2s ease-in;
+}
+
+.toggle-on-label {
+  right: 1em; /* account for 1em toggle */
+  left: 0;
+}
+
+.toggle-off-label {
+  right: 0;
+  left: 1em; /* account for 1em toggle */
+}
+
+
+/**
+ * On.
+ */
+
+.toggle.on .toggle-checkbox {
+  margin-left: -1em;
+  left: 100%;
+}
+
+.toggle.on .toggle-off-label {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+
+/**
+ * Off.
+ */
+
+.toggle.off .toggle-on-label {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}

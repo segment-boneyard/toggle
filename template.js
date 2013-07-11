@@ -1,0 +1,1 @@
+module.exports = '<div class="toggle off">\n  <label class="toggle-on-label">On</label>\n  <input class="toggle-checkbox" type="checkbox">\n  <label class="toggle-off-label">Off</label>\n</div>';
