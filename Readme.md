@@ -1,7 +1,9 @@
-
 # toggle
 
   A toggle UI element.
+  
+  ![on](https://dsz91cxz97a03.cloudfront.net/oRGz5a0ban-2000x2000.png)
+  ![off](https://dsz91cxz97a03.cloudfront.net/M39NaLzXwI-2000x2000.png)
 
 ## Installation
 
@@ -35,7 +37,7 @@ toggle.value(); // false
 ```
 
 ### Toggle(value, el)
-  Create a new toggle with an optional starting `value` and optional `element` to use instead of creating one.
+  Create a new toggle with an optional starting `value` and optional `el` to use instead of creating one.
 
 ### .el
   The toggle's DOM element.
