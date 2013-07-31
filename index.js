@@ -54,6 +54,19 @@ Toggle.prototype.value = function (val) {
 
 
 /**
+ * Set the toggle's name, on the checkbox. That way forms that get submitted
+ * will get the proper value.
+ *
+ * @param {String} name
+ * @return {Toggle}
+ */
+
+Toggle.prototype.name = function (name) {
+  this.checkbox.name = name;
+};
+
+
+/**
  * Toggle the toggle :)
  *
  * @return {Toggle}

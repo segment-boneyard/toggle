@@ -39,13 +39,16 @@ toggle.value(); // false
 ### Toggle(value, el)
   Create a new toggle with an optional starting `value` and optional `el` to use instead of creating one.
 
-### .el
+### #el
   The toggle's DOM element.
 
-### .value(val)
+### #value(val)
   Get or set the value of the toggle.
 
-### .toggle()
+### #name(name)
+  Set the toggle's internal checkbox's name, so forms can be submitted properly.
+
+### #toggle()
   Toggle the value of the toggle.
 
 ### .label(on, off)
