@@ -28,6 +28,12 @@ toggle.value(); // false
 
 ## API
 
+### Toggle(value, el)
+  Create a new toggle with an optional starting `value` and optional `el` to use instead of creating one.
+
+### #el
+  The toggle's DOM element.
+
 ```html
 <div class="toggle">
   <label class="toggle-on-label"></label>
@@ -35,12 +41,6 @@ toggle.value(); // false
   <label class="toggle-off-label"></label>
 </div>
 ```
-
-### Toggle(value, el)
-  Create a new toggle with an optional starting `value` and optional `el` to use instead of creating one.
-
-### #el
-  The toggle's DOM element.
 
 ### #value(val)
   Get or set the value of the toggle.
