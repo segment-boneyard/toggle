@@ -45,6 +45,8 @@ Emitter(Toggle.prototype);
  */
 
 Toggle.prototype.value = function (val) {
+  if (val === undefined) return value(this.checkbox);
+  if (this.value() === val) return;
   value(this.checkbox, val);
   this.toggleClass('on', val);
   this.toggleClass('off', !val);
