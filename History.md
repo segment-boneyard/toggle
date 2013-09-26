@@ -2,6 +2,7 @@
 --------------------------
 * changed to a `div` since firefox sucks
 * converted to new template system
+* added `.toggle-label` class to both labels
 
 0.0.3 - September 11, 2013
 --------------------------
