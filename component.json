@@ -19,5 +19,6 @@
   },
   "scripts": ["lib/index.js"],
   "styles": ["lib/index.css"],
-  "templates": ["lib/index.html"]
+  "templates": ["lib/index.html"],
+  "main": "lib/index.js"
 }
