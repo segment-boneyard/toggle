@@ -31,7 +31,9 @@ toggle.value(); // false
 ```html
 <div class="toggle">
   <label class="toggle-on-label"></label>
-  <input class="toggle-checkbox" type="checkbox">
+  <div class="toggle-switch">
+    <input class="toggle-checkbox" type="checkbox">
+  </div>
   <label class="toggle-off-label"></label>
 </div>
 ```

@@ -4,7 +4,8 @@
  *
  *   div.toggle
  *     label.toggle-on-label
- *     input[type="checkbox"].toggle-checkbox
+ *     div.toggle-switch
+ *       input[type="checkbox"].toggle-checkbox
  *     label.toggle-off-label
  *
  * The toggle's height is always relative to the font-size, so if you want to
@@ -20,13 +21,17 @@
   cursor: pointer;
 }
 
+.toggle-checkbox {
+  display: none; /* just there for sematics */
+}
+
 .toggle-on-label,
-.toggle-checkbox,
+.toggle-switch,
 .toggle-off-label {
   pointer-events: none;
 }
 
-.toggle-checkbox {
+.toggle-switch {
   position: absolute;
   left: 0;
   top: 0;
@@ -66,7 +71,7 @@
  * On.
  */
 
-.toggle.on .toggle-checkbox {
+.toggle.on .toggle-switch {
   margin-left: -1em;
   left: 100%;
 }
