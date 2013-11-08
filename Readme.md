@@ -2,8 +2,8 @@
 
   A toggle UI element.
   
-  ![on](https://dsz91cxz97a03.cloudfront.net/oRGz5a0ban-2000x2000.png)
-  ![off](https://dsz91cxz97a03.cloudfront.net/M39NaLzXwI-2000x2000.png)
+  ![on](https://i.cloudup.com/kjeyaT5oFH.png)
+  ![off](https://i.cloudup.com/hEd5319GKt.png)
 
 ## Installation
 
