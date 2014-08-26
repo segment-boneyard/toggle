@@ -1,3 +1,9 @@
+
+0.1.1 - August 26, 2014
+==================
+
+* add duo support
+
 0.1.0 - September 26, 2013
 --------------------------
 * changed to a `div` since firefox sucks
